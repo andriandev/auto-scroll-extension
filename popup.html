@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Auto Scroll</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <img src="icons/icon.png" alt="Icon" />
+      <h1>Auto Scroll</h1>
+    </div>
+
+    <label for="pixels">Pixels per scroll</label>
+    <input type="number" id="pixels" value="1" min="1" />
+
+    <label for="interval">Interval (ms)</label>
+    <input type="number" id="interval" value="10" min="1" />
+
+    <label for="behavior">Scroll Behavior</label>
+    <select id="behavior">
+      <option value="auto">Auto</option>
+      <option value="smooth">Smooth</option>
+    </select>
+
+    <button id="start">Start Scrolling</button>
+    <button class="stop" id="stop">Stop Scrolling</button>
+
+    <footer>Made with AndrianDev</footer>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
